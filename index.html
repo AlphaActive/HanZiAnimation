@@ -59,16 +59,18 @@
 
 <body class="text-center">
 <div class="word-input">
-    <img class="mb-4" src="img/word-logo.gif" alt="" width="80" height="80">
+ 
     <h1 class="h3 mb-3 font-weight-normal"></h1>
     <input type="text" id="word" class="form-control" name="word" placeholder="Input word">
-    <div class="word-show">
-        <div id="character-target-div"></div>
-    </div>
+
     <button class="btn btn-lg btn-primary btn-block" id="animate-button">Go</button>
 	<br>
-    <a href="https://chanind.github.io/hanzi-writer/" target="_blank">Powered by Hanzi-Writer</a>
-    <p class="mt-5 mb-3 text-muted">&copy; made in China</p>
+    
+
+        <div id="character-target-div"></div>
+
+
+ 
 </div>
 
 
@@ -88,8 +90,8 @@
             return false;
         };
         var writer = HanziWriter.create('character-target-div', word, {
-            width: 100,
-            height: 100,
+            width: 300,
+            height: 300,
             padding: 5,
             showOutline: true
         });
